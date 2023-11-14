@@ -8,7 +8,7 @@
         </div>
         <div class="flex-1 bg-purple-800 bg-side1">
           <div class="w-full h-full bg-side2 rounded-l-lg">
-
+            
           </div>
         </div>
       </nav>
