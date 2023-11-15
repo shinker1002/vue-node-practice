@@ -11,7 +11,7 @@ app.use(express.json());
 // HTTP 요청 logger인 morgan을 적용합니다.
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms'))
 
-const port = 8080
+const port = 3000
 
 
 const groupsRouter = require('./router/groups');

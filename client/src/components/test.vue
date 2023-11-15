@@ -1,4 +1,3 @@
-// test.vue  
 <template>
 <h2 class="boxTest">test 페이지</h2>
 <!-- <router-link to="/">메인페이지 이동</router-link> -->

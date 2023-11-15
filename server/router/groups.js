@@ -62,7 +62,8 @@ router.get('/:groupId', (req, res)=> {
         return el.groupId === groupId
     })[0]
 
-    return temp.length ? res.status(200).send(temp) : res.status(404).send(temp)
+    console.log(temp)
+    return temp ? res.status(200).send(temp) : res.status(404).send(temp)
 });
 
 
@@ -85,7 +86,7 @@ router.patch('/:groupId', (req, res)=> {
     if (temp.length === 0) return res.status(404).send('데이터를 찾지 못함.')
 
     // 데이터 수정
-    for( key of Object.keys(data)) {
+    for(key of Object.keys(data)) {
         temp[0][key] = data[key]
     };
 
